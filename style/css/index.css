@@ -214,6 +214,8 @@
 .cont-spotify .cont-iframe {
   max-width: 298px;
   width: 100%;
+  border: none;
+  background-color: transparent;
 }
 
 .cont-where {
