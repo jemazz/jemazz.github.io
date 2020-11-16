@@ -160,16 +160,14 @@
   background-color: #00f3bb;
   border: none;
   height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
   cursor: pointer;
 }
 .btn-conoce:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #FFFFFF;
-}
-.btn-conoce a {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
 }
 
 .listens:hover {
@@ -369,8 +367,6 @@ img {
   height: 48px;
   background-color: #00f3bb;
   border: none;
-}
-.cont-lastest-news .listens a {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;

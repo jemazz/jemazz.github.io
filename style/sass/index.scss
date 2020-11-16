@@ -152,22 +152,18 @@
 
 .btn-conoce {
     width: 288px;
-    
     text-align: center;
     background-color: #00f3bb;
     border: none;
     height: 48px;
- 
+    font-size: $font-size-xs;
+    font-weight: $font-weight-med;
+    line-height: 22px;
     cursor: pointer;
+
     &:hover {
         background-image: $background-button-gradient;
         color: $color-white;
-    }
-
-    a {
-        font-size: $font-size-xs;
-        font-weight: $font-weight-med;
-        line-height: 22px;
     }
 }
 
@@ -366,13 +362,9 @@ img {
     height: 48px;
     background-color: #00f3bb;
     border: none;
-
-    a {
-        font-size: $font-size-xs;
-        font-weight: $font-weight-med;
-        line-height: 22px;
-
-    }
+    font-size: $font-size-xs;
+    font-weight: $font-weight-med;
+    line-height: 22px;
 }    
 
 footer {
