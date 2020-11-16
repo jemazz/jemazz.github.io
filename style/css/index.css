@@ -1,0 +1,717 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  line-height: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+}
+
+.cont-nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: 44px;
+  background-color: #FFFFFF;
+  padding: 10px 0;
+}
+
+.logo {
+  position: absolute;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  bottom: 10px;
+  top: 10px;
+}
+
+.menu-hamb {
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+}
+
+.icono-hamb {
+  position: absolute;
+  padding: 0;
+  right: 16px;
+  top: 6px;
+  width: 19px;
+  height: 2px;
+  background-color: #000000;
+  pointer-events: none;
+}
+
+.icono-hamb::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  width: 19px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.icono-hamb::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  width: 19px;
+  height: 2px;
+  background-color: #000000;
+  bottom: 3px;
+}
+
+.fa-times {
+  position: absolute;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.check-hamb {
+  position: absolute;
+  right: 16px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+}
+
+.cont-hamb {
+  display: none;
+  position: absolute;
+}
+
+.menu-hamb input:checked ~ .icono-hamb {
+  opacity: 0;
+}
+
+.menu-hamb input:checked ~ .fa-times {
+  opacity: 1;
+  position: absolute;
+  top: 6px;
+}
+
+.menu-hamb input:checked ~ .cont-hamb {
+  display: contents;
+}
+
+.links {
+  min-width: 320px;
+  height: 224px;
+  margin-top: 34px;
+  background-color: #0000ec;
+}
+
+.cont-hamb .opt {
+  display: block;
+  padding: 16px 0 8px 16px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 28px;
+}
+.cont-hamb .opt:hover {
+  color: #00F3BB;
+}
+.cont-hamb .opt:active {
+  color: #060A24;
+  text-decoration: line-through;
+}
+
+.title, .presentation .point-blue, .presentation .tachado {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.paragraph {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.presentation {
+  margin: 29px 16px 24px 16px;
+}
+
+.presentation .tachado {
+  text-decoration: line-through;
+}
+
+.presentation .cont-paragraph {
+  margin-top: 16px;
+  margin-bottom: 36px;
+}
+
+.cont-paragraph-desk {
+  display: none;
+}
+
+.cont-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-conoce {
+  width: 288px;
+  text-align: center;
+  background-color: #00f3bb;
+  border: none;
+  height: 48px;
+  cursor: pointer;
+}
+.btn-conoce:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+}
+.btn-conoce a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.listens:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+}
+
+.episodios {
+  position: relative;
+  padding-top: 64px;
+}
+
+.episodios::before {
+  position: absolute;
+  content: "";
+  transform: skew(0deg, -4deg);
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  top: 10px;
+  min-width: 320px;
+  height: 1203.4px;
+  z-index: 1;
+  width: 100%;
+}
+
+.episodios .title, .episodios .presentation .tachado, .presentation .episodios .tachado, .episodios .presentation .point-blue, .presentation .episodios .point-blue {
+  position: relative;
+  padding-bottom: 21px;
+  padding-left: 16px;
+  z-index: 1;
+  color: #FFFFFF;
+}
+
+.cont-spotify {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  padding: 0 auto;
+  text-align: center;
+}
+
+.cont-spotify .cont-iframe {
+  max-width: 298px;
+  width: 100%;
+}
+
+.cont-where {
+  position: relative;
+  z-index: 2;
+  top: 48px;
+}
+
+img {
+  max-width: 360px;
+  width: 100%;
+}
+
+.cont-where .content {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-where .content .title, .cont-where .content .presentation .tachado, .presentation .cont-where .content .tachado, .cont-where .content .presentation .point-blue, .presentation .cont-where .content .point-blue {
+  margin-top: 27px;
+}
+
+.cont-where .parr-where {
+  min-width: 288px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.parr-where .parr1 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  width: 100%;
+  height: 100%;
+}
+
+.parr-where .parr2 {
+  font-size: 14px;
+  line-height: 22px;
+  width: 100%;
+  height: 100%;
+}
+
+.cont-guest {
+  position: relative;
+  top: 96px;
+}
+
+.cont-guest .title, .cont-guest .presentation .tachado, .presentation .cont-guest .tachado, .cont-guest .presentation .point-blue, .presentation .cont-guest .point-blue {
+  padding-left: 16px;
+  padding-bottom: 14px;
+}
+
+.img-guest {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.guest {
+  width: 320px;
+  width: 100%;
+  max-height: 243px;
+}
+
+.cont-other {
+  position: relative;
+  top: 132px;
+}
+
+.cont-other .title, .cont-other .presentation .tachado, .presentation .cont-other .tachado, .cont-other .presentation .point-blue, .presentation .cont-other .point-blue {
+  margin-bottom: 37px;
+  padding-left: 16px;
+}
+
+.other-topic {
+  display: flex;
+  justify-content: CENTER;
+  flex-wrap: wrap;
+}
+
+.topic {
+  display: flex;
+  justify-content: space-between;
+  min-width: 320px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.topic img {
+  max-width: 104px;
+  width: 100%;
+}
+
+.text-topico {
+  margin-top: 13px;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.cont-lastest-news {
+  position: relative;
+  top: 100px;
+}
+
+.cont-lastest-news::before {
+  position: absolute;
+  content: "";
+  min-width: 320px;
+  height: 341px;
+  z-index: 2;
+  width: 100%;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  background: linear-gradient(to bottom right, transparent 50%, #0000ff 50%, #0000a3 50%) no-repeat, linear-gradient(to bottom right, transparent 0.1%, #0000a3 0.1%) no-repeat;
+  background-size: 611% 100%, 0% 108%;
+  background-position: 100% 100%, 100% 100%;
+}
+
+.cont-lastest-news .question {
+  position: absolute;
+  margin-top: 64px;
+  left: 16px;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+  color: #FFFFFF;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.btn-listens {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  top: 226px;
+  left: 0;
+  right: 0;
+}
+
+.cont-lastest-news .listens {
+  min-width: 288px;
+  height: 48px;
+  background-color: #00f3bb;
+  border: none;
+}
+.cont-lastest-news .listens a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 320px;
+  align-items: center;
+  height: 121px;
+  width: 100%;
+  top: 428px;
+}
+
+.text-footer {
+  padding-top: 24px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  top: 62px;
+  left: 3.5px;
+  right: 3.5px;
+}
+
+i {
+  margin-right: 16px;
+}
+
+@media (min-width: 600px) {
+  br {
+    display: none;
+  }
+
+  .episodios::before {
+    height: 1203.4px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .cont-nav {
+    height: 80px;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo {
+    left: 100px;
+    width: 36px;
+    height: 36px;
+    bottom: 22px;
+    top: 22px;
+  }
+
+  .menu.hamb {
+    position: relative;
+    min-width: 320px;
+    width: 100%;
+  }
+
+  .cont-hamb {
+    position: initial;
+    display: contents;
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    padding-right: 52px;
+  }
+
+  .cont-hamb .opt {
+    display: block;
+    color: initial;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    margin-right: 48px;
+    padding: 0;
+  }
+
+  .check-hamb,
+.fa .fa-times .fa-l,
+.icono-hamb {
+    display: none;
+  }
+
+  .presentation {
+    margin-top: 120px;
+    margin-left: 200px;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .presentation .title,
+.presentation .title-point,
+.presentation .point-blue,
+.presentation .tachado {
+    font-size: 64px;
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 84px;
+  }
+
+  .presentation .title, .presentation .tachado, .presentation .point-blue {
+    display: inline-block;
+    padding-bottom: 0;
+  }
+
+  .presentation .title .point-blue, .presentation .tachado .point-blue, .presentation .point-blue .point-blue {
+    color: #0000ec;
+  }
+
+  .cont-paragraph {
+    display: none;
+  }
+
+  .cont-paragraph-desk {
+    display: contents;
+  }
+
+  .paragraph-desktop {
+    font-size: 16px;
+    line-height: 24px;
+    width: 628px;
+    height: 48px;
+    margin-top: 0;
+    margin-bottom: 56px;
+  }
+
+  .cont-btn {
+    display: flex;
+    justify-content: left;
+  }
+
+  .btn-conoce {
+    width: 226px;
+  }
+  .btn-conoce a {
+    font-size: 18px;
+    height: 56px;
+    line-height: 24px;
+  }
+
+  .episodios {
+    min-width: 1440px;
+    height: 1042.66px;
+    padding-top: 0;
+  }
+
+  .episodios::before {
+    transform: skew(0deg, -5.5deg);
+    top: 70px;
+    height: 86%;
+  }
+
+  .episodios .title, .episodios .presentation .tachado, .presentation .episodios .tachado, .episodios .presentation .point-blue, .presentation .episodios .point-blue {
+    padding-left: 200px;
+    top: 186px;
+    padding-bottom: 0;
+    font-size: 48px;
+    line-height: 62px;
+    color: #FFFFFF;
+  }
+
+  .cont-spotify {
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    height: 536px;
+    min-width: 1280px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    top: 126px;
+  }
+
+  .cont-spotify .cont-iframe {
+    max-width: 584px;
+    height: 232px;
+  }
+
+  .cont-where {
+    display: flex;
+    padding-left: 200px;
+  }
+  .cont-where .phone {
+    margin-top: -189px;
+  }
+  .cont-where .title, .cont-where .presentation .tachado, .presentation .cont-where .tachado, .cont-where .presentation .point-blue, .presentation .cont-where .point-blue {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .cont-where .content {
+    padding: 0;
+    padding-top: 20.4px;
+    padding-left: 62.4px;
+    display: flex;
+    flex-direction: column;
+  }
+  .cont-where .content .title, .cont-where .content .presentation .tachado, .presentation .cont-where .content .tachado, .cont-where .content .presentation .point-blue, .presentation .cont-where .content .point-blue {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .cont-where .content .parr-where {
+    max-width: 464px;
+    min-height: 204px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cont-where .content .parr-where .parr1,
+.cont-where .content .parr-where .parr2 {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  .cont-guest .title, .cont-guest .presentation .tachado, .presentation .cont-guest .tachado, .cont-guest .presentation .point-blue, .presentation .cont-guest .point-blue,
+.cont-other .title,
+.cont-other .presentation .tachado,
+.presentation .cont-other .tachado,
+.cont-other .presentation .point-blue,
+.presentation .cont-other .point-blue {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  .cont-guest {
+    position: relative;
+    top: 126px;
+  }
+  .cont-guest .title, .cont-guest .presentation .tachado, .presentation .cont-guest .tachado, .cont-guest .presentation .point-blue, .presentation .cont-guest .point-blue {
+    padding-left: 200px;
+    padding-bottom: 36px;
+  }
+  .cont-guest .guest {
+    max-width: 33%;
+    max-height: 364px;
+    object-fit: cover;
+  }
+
+  .cont-other {
+    top: 190px;
+  }
+  .cont-other .title, .cont-other .presentation .tachado, .presentation .cont-other .tachado, .cont-other .presentation .point-blue, .presentation .cont-other .point-blue {
+    margin-bottom: 69px;
+    padding-left: 100px;
+  }
+
+  .cont-lastest-news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 170px;
+  }
+  .cont-lastest-news::before {
+    min-width: 1440px;
+    height: 518px;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(to bottom right, transparent 50%, #0000ff 50%, #0000a3 50%) no-repeat, linear-gradient(to bottom right, transparent 0.1%, #0000a3 0.1%) no-repeat;
+    background-size: 341% 100%, 0% 108%;
+    background-position: 100% 100%, 100% 100%;
+  }
+  .cont-lastest-news .question {
+    position: absolute;
+    top: 213px;
+    margin-top: 0;
+    left: none;
+    right: none;
+    z-index: 2;
+    color: #FFFFFF;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .cont-lastest-news .btn-listens {
+    position: absolute;
+    z-index: 2;
+    top: 311px;
+    left: none;
+    right: none;
+  }
+  .cont-lastest-news .listens {
+    min-width: 345px;
+    height: 56px;
+  }
+  .cont-lastest-news .listens a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 1440px;
+    align-items: center;
+    height: 121px;
+    width: 100%;
+    top: 704px;
+    z-index: 2;
+    margin-top: -17px;
+  }
+  footer .text-footer {
+    padding-left: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  footer .iconos {
+    padding-right: 64px;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .iconos i {
+    margin-right: 36px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

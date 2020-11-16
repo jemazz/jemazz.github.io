@@ -1,0 +1,12 @@
+@import "../sass/variables";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border:none;
+    line-height: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:$font-family-text-bottom;
+    color:$font-colour-gral;
+}
